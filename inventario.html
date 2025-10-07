@@ -1,45 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inventario de Cajas</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inventario de Cajas</title>
+<link rel="stylesheet" href="styles.css">
 </head>
-<body class="app-body">
+<body>
+  <h1>Inventario de Cajas</h1>
 
-<div class="nav-bar">
-  <h1>Inventario de Cajas Plásticas</h1>
-  <button onclick="logout()">Cerrar Sesión</button>
-</div>
+  <!-- Proveedores -->
+  <h2>Proveedores</h2>
+  <input type="text" id="newProveedor" placeholder="Nuevo proveedor">
+  <button id="addProveedorBtn">Agregar proveedor</button>
+  <ul id="proveedoresList"></ul>
 
-<div class="container">
-  <h2>Inventario de Cajas</h2>
-
-  <!-- Formulario solo para admin -->
-  <div id="adminForm" class="admin-only">
-    <input type="text" id="proveedor" placeholder="Proveedor">
-    <input type="text" id="producto" placeholder="Producto">
-    <input type="number" id="entrada" placeholder="Entradas">
-    <input type="number" id="salida" placeholder="Salidas">
-    <button id="btnAgregar">Agregar/Actualizar</button>
-  </div>
-
-  <table id="tablaInventario">
+  <!-- Productos -->
+  <h2>Productos</h2>
+  <input type="text" id="productoName" placeholder="Nombre producto">
+  <input type="number" id="productoCantidad" placeholder="Cantidad">
+  <button id="addProductoBtn">Agregar producto</button>
+  <table id="productosTable">
     <thead>
-      <tr>
-        <th>Proveedor</th>
-        <th>Producto</th>
-        <th>Entradas</th>
-        <th>Salidas</th>
-        <th>Stock</th>
-        <th>Acciones</th>
-      </tr>
+      <tr><th>Producto</th><th>Stock</th><th>Entradas</th><th>Salidas</th><th>Acciones</th></tr>
     </thead>
     <tbody></tbody>
   </table>
-</div>
 
 <script src="script.js"></script>
 </body>
 </html>
+
