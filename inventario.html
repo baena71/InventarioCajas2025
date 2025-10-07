@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventario de Cajas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="app-body">
+
+<div class="nav-bar">
+  <h1>Inventario de Cajas Plásticas</h1>
+  <button onclick="logout()">Cerrar Sesión</button>
+</div>
+
+<div class="container">
+  <h2>Inventario de Cajas</h2>
+
+  <!-- Formulario solo para admin -->
+  <div id="adminForm" class="admin-only">
+    <input type="text" id="proveedor" placeholder="Proveedor">
+    <input type="text" id="producto" placeholder="Producto">
+    <input type="number" id="entrada" placeholder="Entradas">
+    <input type="number" id="salida" placeholder="Salidas">
+    <button id="btnAgregar">Agregar/Actualizar</button>
+  </div>
+
+  <table id="tablaInventario">
+    <thead>
+      <tr>
+        <th>Proveedor</th>
+        <th>Producto</th>
+        <th>Entradas</th>
+        <th>Salidas</th>
+        <th>Stock</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
