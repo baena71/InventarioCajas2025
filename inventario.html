@@ -7,27 +7,32 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Inventario de Cajas</h1>
+<h1>Inventario de Cajas</h1>
 
-  <!-- Proveedores -->
-  <h2>Proveedores</h2>
-  <input type="text" id="newProveedor" placeholder="Nuevo proveedor">
-  <button id="addProveedorBtn">Agregar proveedor</button>
-  <ul id="proveedoresList"></ul>
+<p id="userRole"></p>
 
-  <!-- Productos -->
-  <h2>Productos</h2>
-  <input type="text" id="productoName" placeholder="Nombre producto">
-  <input type="number" id="productoCantidad" placeholder="Cantidad">
-  <button id="addProductoBtn">Agregar producto</button>
-  <table id="productosTable">
-    <thead>
-      <tr><th>Producto</th><th>Stock</th><th>Entradas</th><th>Salidas</th><th>Acciones</th></tr>
-    </thead>
-    <tbody></tbody>
-  </table>
+<h2>Proveedores</h2>
+<div id="proveedorSection">
+    <input type="text" id="newProveedor" placeholder="Nuevo proveedor">
+    <button id="addProveedorBtn">Agregar proveedor</button>
+</div>
+<ul id="proveedoresList"></ul>
+
+<h2>Productos</h2>
+<div id="productoSection">
+    <input type="text" id="productoName" placeholder="Nombre producto">
+    <input type="number" id="productoCantidad" placeholder="Cantidad">
+    <button id="addProductoBtn">Agregar producto</button>
+</div>
+<table id="productosTable">
+<thead>
+<tr><th>Producto</th><th>Stock</th><th>Entradas</th><th>Salidas</th><th>Acciones</th></tr>
+</thead>
+<tbody></tbody>
+</table>
 
 <script src="script.js"></script>
 </body>
 </html>
+
 
